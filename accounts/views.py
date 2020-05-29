@@ -38,7 +38,7 @@ def login(request):
             auth.login(request,user)
             return redirect('/')
         else:
-            messages.info(request,'invalid user')
+            messages.info(request,'invalid user') 
             return redirect('login')
     else:
         return render(request,'login.html')
