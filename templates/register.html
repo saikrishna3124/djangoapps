@@ -6,11 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Register</title>
 <link rel="stylesheet" type="text/css" href="{% static 'styles/register.css' %}">
-
 </head>
 <body>
-
-<form action="register" method="post">
+<div id="id01" class="modal">
+<form class="modal-content animate" action="register" method="post">
 {% csrf_token %}
   <div class="container">
     <h1>Registration Form</h1>
@@ -49,6 +48,6 @@
         {% endfor %}
     </div>
 </form>
-
+</div>
 </body>
 </html>
